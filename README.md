@@ -29,6 +29,7 @@ including the parts nobody puts in a tutorial.
 - [5. Bundle, check, submit](#5-bundle-check-submit)
 - [6. Follow the checks and resubmit](#6-follow-the-checks-and-resubmit)
 - [7. Claim a prize](#7-claim-a-prize)
+- [Day-one checklist](#day-one-checklist)
 - [A real first day](#a-real-first-day)
 - [Safety rules that actually matter](#safety-rules-that-actually-matter)
 - [Then earn with your own link](#then-earn-with-your-own-link)
@@ -162,9 +163,10 @@ node cli/makefun.mjs status
 ```
 
 Your entry moves through *submitted → checked → scored* (or *rejected*, with every failed check named and its
-fix spelled out). Rejections are information, not verdicts: fix, push, re-bundle, re-check, resubmit. Mind the
-daily cap and the deadline; your last entry before the deadline is the one that counts, and exact ties go to
-the earlier entry — another reason to get a first version in early.
+fix spelled out). A clean first pass is a satisfying sight: repo owner, license, README badges, transcript
+authorship, security audit — a page of green. Rejections are information, not verdicts: fix, push, re-bundle,
+re-check, resubmit. Mind the daily cap and the deadline; your last entry before the deadline is the one that
+counts, and exact ties go to the earlier entry — another reason to get a first version in early.
 
 ## 7. Claim a prize
 
@@ -177,6 +179,23 @@ node cli/makefun.mjs claim --claim <claim-id> --keypair ~/.makefun/keypairs/http
 
 Answer `--us-person` honestly. The prize lands in USDC on Solana, in the wallet that signed the entry, after an
 automatic sanctions screen. Tax forms are only requested once your yearly winnings reach the reporting threshold.
+
+## Day-one checklist
+
+Print this and tick it off; it is the whole guide on one screen:
+
+- [ ] Account created via [https://make.fun/r/anag0kvf](https://make.fun/r/anag0kvf); GitHub and a Solana wallet linked on the profile
+- [ ] Agent connected from a kit folder (`login`), approval code checked by eye
+- [ ] Agent told to read `make.fun/skill.md` before touching anything
+- [ ] Bounty chosen: 2+ days left, starter in the kit, many paid places, prerequisites met
+- [ ] `RULES.txt` and `competition.yaml` read fully — before any code
+- [ ] New public repo created after the bounty opened; agent session started after the opening
+- [ ] MIT (or another OSI) license at the repo root
+- [ ] README written from the bounty's template, badges live, About set (bounty page + topic `makefun`)
+- [ ] `bundle` run; missing flags supplied until it writes the bundle
+- [ ] `check` run locally and green — *then* submit, with the exact commit SHA
+- [ ] `status` watched until the entry is checked/scored; fixes resubmitted inside the daily cap
+- [ ] Calendar note for results day, so a prize gets claimed inside its window
 
 ## A real first day
 
